@@ -1,0 +1,64 @@
+/* Basic Form Style */
+
+fieldset{
+    border: 1px solid #292929;
+    border-radius: .5em;
+}
+form{
+    /* center form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form Outline */
+    padding: 1em;
+    border: 2px solid #292929;
+    border-radius: 1em;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li{
+    margin-top: 1em;
+}
+
+label{
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+input, textarea{
+    /* set the font for all text areas */
+    font: 1em sans-serif;
+
+    /* uniform text field sizes */
+    width: 280px;
+    box-sizing: border-box;
+    /* borders matching the field borders */
+    border: 1px solid #292929;
+}
+
+input:focus, textarea:focus{
+    /* additional highlighting for focused elements */
+    border-color: greenyellow;
+    border-radius: .25em;
+    outline-style: none;
+    background-color: #999;
+}
+
+textarea{
+    /* align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* provide some space to type text */
+    height: 5em;
+}
+
+button{
+    /* align buttons with the text fields */
+    margin-left: calc(80px + .25em);
+}
